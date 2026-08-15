@@ -317,6 +317,323 @@
     .help-grid { grid-template-columns:1fr; }
     .dark .mobile-action-bar { border-color:#3c4043; background:#202124; box-shadow:none; }
   }
+
+  /* ===== الهوية الرسمية: فيزياء سطيف — تباين مؤسسي ومظهر أكاديمي ===== */
+  :root { --official-navy:#062e45; --official-teal:#007b7f; --official-gold:#c99228; --official-ink:#142b3b; --official-muted:#597080; --official-canvas:#eef3f5; --official-line:#cbd9df; --official-soft:#e6f0f1; }
+  html { background:var(--official-canvas); }
+  body.drive-body { background:linear-gradient(180deg,#dfe9ec 0,#f5f8f8 250px,#eef3f5 100%); color:var(--official-ink); }
+  :focus-visible { outline-color:var(--official-gold); outline-offset:3px; }
+  mark { background:#ffe8ad; color:#4b3100; }
+  .drive-header { position:sticky; border-bottom:4px solid var(--official-gold); background:var(--official-navy); box-shadow:0 5px 18px rgba(6,46,69,.20); }
+  .drive-header::before { content:""; position:absolute; inset-inline:0; top:0; height:3px; background:linear-gradient(90deg,var(--official-gold),#f0cf70 40%,var(--official-gold)); }
+  .drive-header .text-gray-900, .drive-header .text-gray-800 { color:#fff !important; }
+  .drive-header .text-\[\#1a73e8\] { color:#f6d77f !important; }
+  .drive-header .hover\:bg-\[\#f1f3f4\]:hover { background:rgba(255,255,255,.10) !important; }
+  .archive-mark::before { background:var(--official-gold); border-radius:8px; }
+  .archive-mark::after { background:var(--official-teal); border-radius:8px; box-shadow:0 4px 9px rgba(0,0,0,.22); }
+  .drive-search { max-width:760px; }
+  .drive-search input, .drive-search input:hover { border:1px solid rgba(255,255,255,.2); background:#fff; color:var(--official-ink); box-shadow:0 2px 0 rgba(0,0,0,.08); }
+  .drive-search input:focus { border-color:var(--official-gold); background:#fff; box-shadow:0 0 0 3px rgba(201,146,40,.22); }
+  .drive-header .filter-launch, .drive-header .theme-toggle { border-color:rgba(255,255,255,.32); background:transparent; color:#fff; }
+  .drive-header .filter-launch:hover, .drive-header .theme-toggle:hover { border-color:#f5d77f; background:rgba(255,255,255,.10); }
+  .drive-header .filter-launch .filter-count { background:var(--official-gold); color:var(--official-navy); }
+  /* مساحة قراءة مركّزة على الشاشات الواسعة؛ تعود إلى العرض الكامل على الأجهزة الأصغر. */
+  .drive-main { width:80%; max-width:80%; margin-inline:auto; padding-top:22px; }
+  .drive-content { border:1px solid var(--official-line); border-radius:14px; background:rgba(255,255,255,.92); padding:26px; box-shadow:0 10px 30px rgba(11,47,64,.07); }
+  .drive-heading { padding-bottom:20px; border-bottom:1px solid var(--official-line); }
+  .drive-heading h1 { color:var(--official-navy); letter-spacing:-.045em; }
+  .drive-heading p { color:var(--official-muted); }
+  .drive-heading-icon { position:relative; }
+  .drive-heading-icon::after { content:""; position:absolute; right:-8px; top:8px; width:3px; height:28px; border-radius:99px; background:var(--official-gold); }
+  .drive-heading-metrics { border-color:var(--official-line); border-radius:8px; background:#f8fbfb; box-shadow:none; }
+  .drive-heading-metrics > span { border-color:var(--official-line); }
+  .drive-heading-metrics b { color:var(--official-navy); }
+  .drive-heading-metrics small { color:var(--official-muted); }
+  .drive-toolbar { border-color:var(--official-line); border-radius:10px; background:#f8fbfb; box-shadow:none; }
+  #viewToggle { border:1px solid var(--official-line); border-radius:8px; background:#fff; padding:3px; }
+  #viewToggle button { border-radius:6px; }
+  #viewToggle button.bg-\[\#e8f0fe\] { background:var(--official-navy) !important; color:#fff !important; }
+  .toolbar-chip-toggle, .filter-launch, .theme-toggle { border-color:var(--official-line); border-radius:7px; background:#fff; color:var(--official-navy); }
+  .toolbar-chip-toggle:hover, .filter-launch:hover, .theme-toggle:hover { border-color:var(--official-teal); background:var(--official-soft); color:var(--official-navy); }
+  .inline-chip-panel { border-color:var(--official-line); border-radius:10px; background:#f8fbfb; box-shadow:none; }
+  .utility-strip { border-bottom:1px solid var(--official-line); padding-bottom:13px; }
+  .utility-label { color:var(--official-navy); }
+  .shortcut-chip, .collection-tab, .help-button { border-color:var(--official-line); border-radius:7px; background:#fff; color:var(--official-ink); }
+  .shortcut-chip:hover, .collection-tab:hover, .help-button:hover { border-color:var(--official-teal); background:var(--official-soft); color:var(--official-navy); }
+  .collection-tab.is-active { border-color:var(--official-navy); background:var(--official-navy); color:#fff; }
+  .drive-chip-row .chip { border-color:var(--official-line); border-radius:7px; background:#fff; color:var(--official-ink); }
+  .drive-chip-row .chip:hover { border-color:var(--official-teal); background:var(--official-soft); }
+  .drive-chip-row .chip.bg-\[\#e8f0fe\] { border-color:var(--official-teal); background:var(--official-teal) !important; color:#fff !important; }
+  .drive-results { border-bottom:2px solid var(--official-gold); }
+  #resultCount { color:var(--official-navy); }
+  .drive-folder-card, .drive-file-card { border-color:var(--official-line); border-radius:10px; background:#fff; box-shadow:0 2px 5px rgba(11,47,64,.04); }
+  .drive-folder-card { border-top:4px solid var(--official-gold); }
+  .drive-file-card { border-top:3px solid var(--official-teal); }
+  .drive-folder-card:hover, .drive-file-card:hover { border-color:var(--official-teal); box-shadow:0 12px 23px rgba(6,46,69,.12); }
+  #grid.file-list { border-color:var(--official-line); border-radius:10px; background:#fff; }
+  .drive-file-row, .drive-folder-row { border-color:var(--official-line); }
+  .drive-file-row:hover, .drive-folder-row:hover { background:#f0f7f7; }
+  .ext-badge { border-radius:4px; }
+  .file-card.is-selected { border-color:var(--official-gold); background:#fff9eb; box-shadow:0 0 0 2px rgba(201,146,40,.18); }
+  .file-card.is-selected .select-indicator { border-color:var(--official-navy); background:var(--official-navy); }
+  .file-open-btn { border:1px solid var(--official-line); border-radius:7px; color:var(--official-navy); box-shadow:0 2px 6px rgba(11,47,64,.13); }
+  .file-open-btn:hover { background:var(--official-soft); }
+  .selection-bar { border-color:var(--official-teal); border-radius:10px; background:#edf8f7; box-shadow:0 10px 24px rgba(0,123,127,.12); }
+  .action-btn { border-color:var(--official-line); border-radius:7px; color:var(--official-ink); }
+  .action-btn:hover { border-color:var(--official-teal); background:var(--official-soft); color:var(--official-navy); }
+  .action-btn.primary, .bg-\[\#1a73e8\] { border-color:var(--official-navy) !important; background:var(--official-navy) !important; color:#fff !important; }
+  .action-btn.primary:hover { background:#114c68 !important; }
+  .action-btn.is-active { border-color:var(--official-gold); background:#fff4d8; color:#754b00; }
+  .drive-sidebar-panel { border-left-color:var(--official-line); }
+  .drive-sidebar-title, .drive-sidebar-panel h2 { color:var(--official-navy) !important; }
+  .drive-storage { border-color:var(--official-line); border-radius:10px; background:#f8fbfb; }
+  .drive-storage-top { border-color:var(--official-line); }
+  .drive-storage-dot { background:var(--official-gold); }
+  .drive-new { border:1px solid var(--official-navy); border-radius:8px; background:var(--official-navy) !important; color:#fff !important; box-shadow:0 5px 10px rgba(6,46,69,.18); }
+  .drive-new > span { background:var(--official-gold) !important; color:var(--official-navy) !important; }
+  .drive-footer { border-top:3px solid var(--official-gold); background:var(--official-navy); color:#d4e0e5; }
+  .footer-brand { color:#fff; }
+  .footer-credit { border-color:rgba(255,255,255,.25); }
+  .search-suggestions, .preview-panel { border-color:var(--official-line); border-radius:10px; box-shadow:0 15px 36px rgba(6,46,69,.20); }
+  .search-suggestion:hover, .search-suggestion:focus-visible { background:var(--official-soft); }
+  .preview-header { border-color:var(--official-line) !important; background:#f8fbfb !important; }
+  .preview-header h2 { color:var(--official-navy) !important; }
+  .preview-header .preview-meta { color:var(--official-muted) !important; }
+  .preview-header .action-btn { border-color:var(--official-line); background:#fff; color:var(--official-navy); }
+  .preview-header .action-btn:hover { border-color:var(--official-teal); background:var(--official-soft); }
+
+  /* الوضع الداكن الهادئ: فحمي دافئ مع طبقات رمادية مريحة وإبرازات تركوازية/ذهبية منخفضة السطوع. */
+  html.dark { background:#1d1f22; }
+  body.drive-body.dark { background:linear-gradient(180deg,#26282d 0,#202226 260px,#1d1f22 100%); color:#f0f2f3; }
+  .dark .drive-header { border-color:#d1a34d; background:#24262b; box-shadow:0 5px 18px rgba(0,0,0,.24); }
+  .dark .drive-main { background:transparent; }
+  .dark .drive-content { border-color:#44484f; background:#292c31; box-shadow:0 12px 35px rgba(0,0,0,.20); }
+  .dark .drive-heading { border-color:#44484f; }
+  .dark .drive-heading h1, .dark .drive-heading-metrics b { color:#fff; }
+  .dark .drive-heading p, .dark .drive-heading-metrics small { color:#b8bec5; }
+  .dark .drive-heading-metrics, .dark .drive-toolbar, .dark .inline-chip-panel, .dark .drive-storage { border-color:#44484f; background:#303339; }
+  .dark .drive-heading-metrics > span, .dark .chip-section-body, .dark .drive-storage-top { border-color:#44484f; }
+  .dark #viewToggle, .dark .toolbar-chip-toggle, .dark .shortcut-chip, .dark .collection-tab, .dark .help-button, .dark .action-btn, .dark .filter-launch, .dark .theme-toggle { border-color:#4d5259; background:#34373d; color:#e9ecee; }
+  .dark #viewToggle button.bg-\[\#e8f0fe\], .dark .collection-tab.is-active { background:#3f7775 !important; color:#fff !important; }
+  .dark .toolbar-chip-toggle:hover, .dark .shortcut-chip:hover, .dark .collection-tab:hover, .dark .help-button:hover, .dark .action-btn:hover { border-color:#82c4c0; background:#3c4047; color:#fff; }
+  .dark .drive-chip-row .chip { border-color:#4d5259; background:#34373d; color:#e9ecee; }
+  .dark .drive-chip-row .chip.bg-\[\#e8f0fe\] { border-color:#639c9a; background:#3f7775 !important; color:#fff !important; }
+  .dark .drive-results { border-color:#d1a34d; }
+  .dark #resultCount { color:#fff; }
+  .dark .drive-folder-card, .dark .drive-file-card, .dark .drive-file-row, .dark .drive-folder-row, .dark #grid.file-list { border-color:#44484f; background:#2b2e34; }
+  .dark .drive-folder-card { border-top-color:#d1a34d; }
+  .dark .drive-file-card { border-top-color:#77b8b4; }
+  .dark .drive-folder-card:hover, .dark .drive-file-card:hover, .dark .drive-file-row:hover, .dark .drive-folder-row:hover { border-color:#82c4c0; background:#373b42; }
+  .dark .file-card.is-selected { border-color:#d1a34d; background:#394147; box-shadow:0 0 0 2px rgba(209,163,77,.16); }
+  .dark .file-open-btn { border-color:#4d5259; background:#34373d; color:#9bd3cf; }
+  .dark .selection-bar { border-color:#639c9a; background:#313b40; }
+  .dark .drive-footer { border-color:#d1a34d; background:#24262b; color:#b8bec5; }
+  .dark .footer-brand { color:#fff; }
+  .dark .search-suggestions, .dark .preview-panel { border-color:#44484f; background:#292c31; }
+  .dark .search-suggestion:hover, .dark .search-suggestion:focus-visible { background:#3c4047; }
+  .dark .preview-header { border-color:#44484f !important; background:#303339 !important; }
+  .dark .preview-header h2 { color:#fff !important; }
+  .dark .preview-header .preview-meta { color:#b8bec5 !important; }
+  .dark .preview-header .action-btn { border-color:#4d5259; background:#34373d; color:#fff; }
+  .dark .preview-header .action-btn:hover { border-color:#82c4c0; background:#3c4047; }
+  /* مساحة عمل مختصرة بعد إزالة ملخص المكتبة */
+  .drive-content { padding-top:18px; }
+  .dark body.drive-body { background:linear-gradient(180deg,#26282d 0,#202226 220px,#1d1f22 100%); }
+  .dark .drive-content { margin-top:0; border-color:#44484f; background:linear-gradient(180deg,#2d3036 0,#272a30 100%); box-shadow:0 18px 42px rgba(0,0,0,.22); }
+  .dark .drive-toolbar { border-color:#4a4f56; background:#303339; }
+  .dark .utility-strip { border-color:#4a4f56; }
+  .dark #viewToggle { border-color:#4d5259; background:#2b2e34; }
+  .dark #viewToggle button:not(.bg-\[\#e8f0fe\]) { color:#d6dbe0; }
+  .dark .toolbar-chip-toggle, .dark .shortcut-chip, .dark .collection-tab, .dark .help-button { border-color:#4d5259; background:#34373d; color:#e9ecee; }
+  .dark .toolbar-chip-toggle:hover, .dark .shortcut-chip:hover, .dark .collection-tab:hover, .dark .help-button:hover { background:#3c4047; }
+  .dark #grid.file-list, .dark .drive-file-row, .dark .drive-folder-row { background:#2b2e34; border-color:#44484f; }
+  .dark .drive-file-row:hover, .dark .drive-folder-row:hover { background:#373b42; }
+  .dark .drive-folder-card, .dark .drive-file-card { background:#2d3036; border-color:#44484f; }
+  .dark .drive-folder-card:hover, .dark .drive-file-card:hover { background:#373b42; border-color:#82c4c0; }
+  @media (max-width:1023px){ .drive-main { width:100%; max-width:100%; } .drive-content { padding:19px; } }
+  @media (max-width:520px){ .drive-content { border-radius:10px; padding:15px; } .drive-heading { padding-bottom:15px; } .toolbar-chip-toggle { padding:7px 9px; } .toolbar-chip-toggle span { max-width:116px; overflow:hidden; text-overflow:ellipsis; } .dark .mobile-action-bar { border-color:#639c9a; background:#313b40; } }
+
+  /* حماية تباين البحث في الوضع المضيء: نص ومؤشر داكنان على خلفية بيضاء مستقرة. */
+  html:not(.dark) body.drive-body:not(.dark) { color-scheme:light; }
+  html:not(.dark) body.drive-body:not(.dark) .drive-search input,
+  html:not(.dark) body.drive-body:not(.dark) .drive-search input:hover,
+  html:not(.dark) body.drive-body:not(.dark) .drive-search input:focus {
+    border-color:#b8cbd1 !important;
+    background:#fff !important;
+    color:#142b3b !important;
+    -webkit-text-fill-color:#142b3b !important;
+    caret-color:#007b7f;
+  }
+  html:not(.dark) body.drive-body:not(.dark) .drive-search input::placeholder {
+    color:#597080 !important;
+    -webkit-text-fill-color:#597080 !important;
+    opacity:1;
+  }
+
+  /* عقد التباين النهائي: لا نص باهت ولا حالة تفاعل غير مقروءة في أي من السمتين. */
+  html:not(.dark) body.drive-body:not(.dark) { color:#142b3b; }
+  html:not(.dark) body.drive-body:not(.dark) .text-gray-900,
+  html:not(.dark) body.drive-body:not(.dark) .text-gray-800,
+  html:not(.dark) body.drive-body:not(.dark) .text-gray-700 { color:#142b3b !important; }
+  html:not(.dark) body.drive-body:not(.dark) .text-gray-600,
+  html:not(.dark) body.drive-body:not(.dark) .text-gray-500,
+  html:not(.dark) body.drive-body:not(.dark) .text-gray-400 { color:#435b67 !important; }
+  html:not(.dark) body.drive-body:not(.dark) .text-\[\#174ea6\],
+  html:not(.dark) body.drive-body:not(.dark) .text-\[\#1a73e8\] { color:#075e68 !important; }
+  html:not(.dark) body.drive-body:not(.dark) select { border-color:#b8cbd1; background-color:#fff; color:#142b3b; }
+  html:not(.dark) body.drive-body:not(.dark) .file-card.is-selected { color:#142b3b; }
+  html:not(.dark) body.drive-body:not(.dark) .file-card.is-selected .text-gray-900,
+  html:not(.dark) body.drive-body:not(.dark) .file-card.is-selected .text-gray-800,
+  html:not(.dark) body.drive-body:not(.dark) .file-card.is-selected .text-gray-700 { color:#142b3b !important; }
+  html:not(.dark) body.drive-body:not(.dark) .drive-header .text-gray-900,
+  html:not(.dark) body.drive-body:not(.dark) .drive-header .text-gray-800 { color:#fff !important; }
+  html:not(.dark) body.drive-body:not(.dark) .drive-header .text-\[\#1a73e8\] { color:#f6d77f !important; }
+  html:not(.dark) body.drive-body:not(.dark) .drive-header .filter-launch,
+  html:not(.dark) body.drive-body:not(.dark) .drive-header .theme-toggle { color:#fff; }
+  html:not(.dark) body.drive-body:not(.dark) :focus-visible { outline-color:#062e45; }
+
+  html.dark body.drive-body { color-scheme:dark; color:#f0f2f3; }
+  html.dark body.drive-body .text-gray-900,
+  html.dark body.drive-body .text-gray-800,
+  html.dark body.drive-body .text-gray-700 { color:#f3f5f6 !important; }
+  html.dark body.drive-body .text-gray-600,
+  html.dark body.drive-body .text-gray-500,
+  html.dark body.drive-body .text-gray-400 { color:#c9ced3 !important; }
+  html.dark body.drive-body .text-\[\#174ea6\],
+  html.dark body.drive-body .text-\[\#1a73e8\] { color:#a8dfdb !important; }
+  html.dark body.drive-body .text-red-500,
+  html.dark body.drive-body .text-red-600,
+  html.dark body.drive-body .text-red-700 { color:#ffb4ab !important; }
+  html.dark body.drive-body .text-amber-500,
+  html.dark body.drive-body .text-amber-600,
+  html.dark body.drive-body .text-yellow-600 { color:#f4d38f !important; }
+  html.dark body.drive-body select { border-color:#555b63; background-color:#34373d; color:#f3f5f6; color-scheme:dark; }
+  html.dark body.drive-body .drive-search input,
+  html.dark body.drive-body .drive-search input:hover,
+  html.dark body.drive-body .drive-search input:focus { border-color:#5a6068 !important; background:#34373d !important; color:#f3f5f6 !important; -webkit-text-fill-color:#f3f5f6 !important; caret-color:#9bd3cf; }
+  html.dark body.drive-body .drive-search input::placeholder { color:#c9ced3 !important; -webkit-text-fill-color:#c9ced3 !important; opacity:1; }
+  html.dark body.drive-body .drive-header .filter-launch,
+  html.dark body.drive-body .drive-header .theme-toggle { border-color:#69717b; background:#303339; color:#fff; }
+  html.dark body.drive-body .drive-header .filter-launch:hover,
+  html.dark body.drive-body .drive-header .theme-toggle:hover { border-color:#a8dfdb; background:#3c4047; color:#fff; }
+  html.dark body.drive-body .collection-tab.is-active,
+  html.dark body.drive-body #viewToggle button.bg-\[\#e8f0fe\],
+  html.dark body.drive-body .drive-chip-row .chip.bg-\[\#e8f0fe\] { background:#3f7775 !important; color:#fff !important; }
+  html.dark body.drive-body .file-card.is-selected { background:#394147; color:#f3f5f6; }
+  html.dark body.drive-body .file-card.is-selected .text-gray-900,
+  html.dark body.drive-body .file-card.is-selected .text-gray-800,
+  html.dark body.drive-body .file-card.is-selected .text-gray-700,
+  html.dark body.drive-body .file-card.is-selected .text-gray-600,
+  html.dark body.drive-body .file-card.is-selected .text-gray-500 { color:#fff !important; }
+  html.dark body.drive-body :focus-visible { outline-color:#f4d38f; }
+
+  /* الحالة النشطة المخصصة: تمنع فئات Tailwind الداخلية من إخفاء أي نص فوق التركواز. */
+  body.drive-body .drive-chip-row .chip.is-active-chip,
+  body.drive-body .drive-chip-row .chip.is-active-chip:hover {
+    border-color:#006b70 !important;
+    background:#006b70 !important;
+    color:#fff !important;
+  }
+  body.drive-body .drive-chip-row .chip.is-active-chip .chip-label,
+  body.drive-body .drive-chip-row .chip.is-active-chip .chip-count,
+  body.drive-body .drive-chip-row .chip.is-active-chip .chip-check,
+  body.drive-body .drive-chip-row .chip.is-active-chip .chip-check * {
+    color:#fff !important;
+    opacity:1 !important;
+  }
+
+  /* قائمة التصنيف الجانبية: حالات مستقلة للنص والعدد وعلامة الاختيار في السمتين. */
+  body.drive-body .cat-item { color:var(--official-ink); }
+  body.drive-body .cat-item .cat-count { color:#597080; }
+  body.drive-body .cat-item.is-active-cat,
+  body.drive-body .cat-item.is-active-cat:hover {
+    background:#006b70 !important;
+    color:#fff !important;
+  }
+  body.drive-body .cat-item.is-active-cat .cat-label,
+  body.drive-body .cat-item.is-active-cat .cat-count,
+  body.drive-body .cat-item.is-active-cat .cat-check,
+  body.drive-body .cat-item.is-active-cat .cat-check * {
+    color:#fff !important;
+    opacity:1 !important;
+  }
+  html.dark body.drive-body .cat-item { color:#edf0f2; }
+  html.dark body.drive-body .cat-item:hover { background:#373b42; color:#fff; }
+  html.dark body.drive-body .cat-item .cat-count { color:#c9ced3; }
+  html.dark body.drive-body .cat-item.is-active-cat,
+  html.dark body.drive-body .cat-item.is-active-cat:hover { background:#006b70 !important; color:#fff !important; }
+
+  /* الفوتر ومسار التنقل وأدوات اللوحة: ألوان صريحة تمنع الوراثة منخفضة التباين. */
+  body.drive-body .drive-footer { color:#e7ecef !important; }
+  body.drive-body .drive-footer .footer-brand,
+  body.drive-body .drive-footer .footer-credit,
+  body.drive-body .drive-footer .footer-credit strong { color:#fff !important; }
+  body.drive-body #clearFilters { border:1px solid transparent; color:#075e68 !important; }
+  body.drive-body #localHomeBtn { background:#006b70 !important; color:#fff !important; }
+  body.drive-body #localHomeBtn .archive-mark { background:#e3fbf8 !important; color:#006b70 !important; }
+  body.drive-body #crumbBar .crumb { color:#075e68 !important; }
+  body.drive-body #crumbBar .crumb:hover,
+  body.drive-body #crumbBar .crumb:focus-visible { background:#e6f0f1 !important; color:#062e45 !important; }
+  html.dark body.drive-body .drive-footer { border-color:#d1a34d; background:#24262b; color:#e7ecef !important; }
+  html.dark body.drive-body #clearFilters { border-color:#639c9a; background:#30383d; color:#d9fffb !important; }
+  html.dark body.drive-body #clearFilters:hover,
+  html.dark body.drive-body #clearFilters:focus-visible { border-color:#a8dfdb; background:#3c494d; color:#fff !important; }
+  html.dark body.drive-body #activeFilterBadge { background:#006b70 !important; color:#fff !important; }
+  html.dark body.drive-body #localHomeBtn,
+  html.dark body.drive-body #localHomeBtn:hover,
+  html.dark body.drive-body #localHomeBtn:focus-visible { border-color:#639c9a; background:#006b70 !important; color:#fff !important; }
+  html.dark body.drive-body #crumbBar .crumb { color:#edf0f2 !important; }
+  html.dark body.drive-body #crumbBar .crumb:hover,
+  html.dark body.drive-body #crumbBar .crumb:focus,
+  html.dark body.drive-body #crumbBar .crumb:focus-visible { background:#3c494d !important; color:#fff !important; outline-color:#f4d38f; }
+  html.dark body.drive-body #crumbBar > span { color:#c9ced3 !important; }
+  html.dark body.drive-body #sidebar .filter-close { color:#fff; }
+
+  /* فوتر الهوية: تسلسل واضح بين اسم المنصة والوصف والاعتماد. */
+  .drive-footer.footer-v2 {
+    border-top:3px solid var(--official-gold);
+    background:linear-gradient(105deg,#062e45 0%,#073c52 54%,#062e45 100%);
+    color:#e5f0f1 !important;
+    padding:18px 0;
+  }
+  .footer-inner {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:22px;
+    width:80%;
+    margin:0 auto;
+  }
+  .footer-identity { display:flex; align-items:center; gap:11px; min-width:0; text-align:right; }
+  .footer-mark {
+    display:grid;
+    flex:0 0 auto;
+    width:34px;
+    height:34px;
+    place-items:center;
+    border:1px solid rgba(255,255,255,.26);
+    border-radius:10px;
+    background:#007b7f;
+    color:#fff;
+    box-shadow:inset 0 0 0 3px rgba(255,255,255,.08);
+  }
+  .footer-brand { display:block; color:#fff !important; font-size:14px; font-weight:900; letter-spacing:.01em; line-height:1.25; }
+  .footer-tag { display:block; margin-top:2px; color:#d4e8e9; font-size:11px; font-weight:600; line-height:1.45; }
+  .footer-divider { width:1px; height:30px; flex:0 0 auto; background:rgba(255,255,255,.24); }
+  .footer-credit { display:flex; align-items:baseline; gap:5px; margin:0; padding:0; border:0; color:#d4e8e9 !important; font-size:11px; font-weight:600; white-space:nowrap; }
+  .footer-credit strong { color:#f6d77f !important; font-weight:900; }
+  html.dark body.drive-body .drive-footer.footer-v2 { border-color:#d1a34d; background:linear-gradient(105deg,#202226 0%,#293035 54%,#202226 100%); color:#e7ecef !important; }
+  html.dark body.drive-body .footer-tag,
+  html.dark body.drive-body .footer-credit { color:#d6dee1 !important; }
+  html.dark body.drive-body .footer-credit strong { color:#f4d38f !important; }
+  html.dark body.drive-body .footer-mark { background:#006b70; border-color:#639c9a; }
+  @media (max-width:767px){
+    .drive-footer.footer-v2 { padding:16px 0; }
+    .footer-inner { width:100%; flex-direction:column; gap:11px; padding:0 18px; text-align:center; }
+    .footer-identity { justify-content:center; text-align:center; }
+    .footer-divider { width:62px; height:1px; }
+    .footer-credit { justify-content:center; flex-wrap:wrap; white-space:normal; text-align:center; }
+  }
 </style>
 </head>
 <body class="drive-body min-h-screen text-gray-800">
@@ -328,7 +645,7 @@
         <span class="archive-mark"><svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M4 7a2 2 0 0 1 2-2h4l2 2.5h6a2 2 0 0 1 2 2v6.5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7z"/><path d="M8 14h7"/></svg></span>
         <span class="drive-brand-copy text-right leading-tight">
           <span class="block f-title font-extrabold text-gray-900">فيزياء سطيف</span>
-          <span class="block f-xs font-bold text-[#1a73e8]">مكتبة المحتوى التعليمي</span>
+          <span class="block f-xs font-bold text-[#1a73e8]">المنصة التعليمية الرسمية</span>
         </span>
       </button>
 
@@ -377,11 +694,6 @@
             </div>
           </div>
 
-          <button id="newBtn" class="drive-new mb-6 flex items-center gap-3 rounded-[15px] bg-white px-4 py-3 f-meta font-extrabold text-gray-700 transition hover:bg-[#f8fafd]">
-            <span class="grid h-7 w-7 place-items-center rounded-xl bg-[#1a73e8] text-white text-xl leading-none">+</span>
-            إجراء جديد
-          </button>
-
           <button id="localHomeBtn" class="mb-3 flex w-full items-center gap-3 rounded-r-full bg-[#e8f0fe] px-4 py-2.5 text-right f-meta font-extrabold text-[#174ea6]">
             <span class="archive-mark !h-7 !w-7 scale-75 origin-right"><svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M4 7a2 2 0 0 1 2-2h4l2 2.5h6a2 2 0 0 1 2 2v6.5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7z"/></svg></span>
             ملفاتي
@@ -407,13 +719,6 @@
 
       <!-- ===== المحتوى ===== -->
       <section class="drive-content mt-4 min-w-0 lg:mt-0">
-
-        <div class="drive-heading">
-          <div>
-            <div class="drive-heading-icon"><span class="archive-mark"><svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M4 7a2 2 0 0 1 2-2h4l2 2.5h6a2 2 0 0 1 2 2v6.5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7z"/><path d="M8 14h7"/></svg></span><div><h1 class="font-extrabold">ملفاتي</h1><p class="f-meta font-medium">اختر قسمًا أو ابحث باسم الملف للوصول إلى محتوى المكتبة مباشرةً.</p></div></div>
-          </div>
-          <div class="drive-heading-metrics" aria-label="ملخص الأرشيف"><span><b id="metricFiles">—</b><small>ملف مفهرس</small></span><span><b id="metricFolders">—</b><small>أقسام رئيسية</small></span><span><b id="metricStatus">جاهز</b><small>حالة الأرشيف</small></span></div>
-        </div>
 
         <!-- شريط الأدوات -->
         <div class="drive-toolbar flex flex-wrap items-center justify-between gap-2">
@@ -494,9 +799,15 @@
     </div>
   </main>
 
-  <footer class="drive-footer border-t py-8 text-center f-xs font-medium text-gray-500">
-    <span class="footer-brand">فيزياء سطيف</span> — مكتبة منظمة للدروس والاختبارات والمذكرات والوثائق التعليمية
-    <span class="footer-credit">إعداد وتطوير: <strong>الأستاذ حكيم بوزورداز</strong></span>
+  <footer class="drive-footer footer-v2" aria-label="معلومات المنصة">
+    <div class="footer-inner">
+      <div class="footer-identity">
+        <span class="footer-mark" aria-hidden="true"><svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M4 7a2 2 0 0 1 2-2h4l2 2.5h6a2 2 0 0 1 2 2v6.5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7z"/></svg></span>
+        <div><span class="footer-brand">فيزياء سطيف</span><span class="footer-tag">المنصة الرسمية للمحتوى العلمي والدعم التعليمي</span></div>
+      </div>
+      <span class="footer-divider" aria-hidden="true"></span>
+      <p class="footer-credit"><span>إعداد وتطوير:</span><strong>الأستاذ حكيم بوزورداز</strong></p>
+    </div>
   </footer>
 
   <!-- ===== نافذة تفاصيل الملف ===== -->
@@ -719,10 +1030,12 @@ function buildTree(){
 }
 function updateArchiveMetrics(){
   const count = DATA.length.toLocaleString('en-US');
-  $('#metricFiles').textContent = count;
-  $('#sidebarMetricFiles').textContent = count;
-  $('#metricFolders').textContent = Object.keys(TREE.dirs).length.toLocaleString('en-US');
-  $('#metricStatus').textContent = 'جاهز';
+  const metricFiles = $('#metricFiles'), sidebarMetricFiles = $('#sidebarMetricFiles');
+  const metricFolders = $('#metricFolders'), metricStatus = $('#metricStatus');
+  if(metricFiles) metricFiles.textContent = count;
+  if(sidebarMetricFiles) sidebarMetricFiles.textContent = count;
+  if(metricFolders) metricFolders.textContent = Object.keys(TREE.dirs).length.toLocaleString('en-US');
+  if(metricStatus) metricStatus.textContent = 'جاهز';
   $('#searchInput').placeholder = 'ابحث داخل '+count+' ملفًا تعليميًا ( / )';
 }
 function agg(node){
@@ -782,10 +1095,10 @@ function showSkeleton(){
 /* ================= الشرائح (filter chips بنمط Drive) ================= */
 function chip(label, active, count, key, cls){
   return '<button data-k="'+esc(key)+'" class="chip '+cls+' flex shrink-0 items-center gap-1.5 rounded-full border px-4 py-1.5 f-meta font-medium transition '+
-    (active ? 'border-transparent bg-[#e8f0fe] text-[#1a73e8]'
-            : 'border-gray-300 bg-white text-gray-700 hover:bg-gray-100')+'">'+
-    (active ? '<span class="grid h-4 w-4 place-items-center text-[#1a73e8]">'+uiIcon('check','h-3.5 w-3.5')+'</span>' : '')+
-    label+' <span class="opacity-60">'+count.toLocaleString('en-US')+'</span></button>';
+    (active ? 'is-active-chip border-transparent'
+             : 'border-gray-300 bg-white text-gray-700 hover:bg-gray-100')+'">'+
+    (active ? '<span class="chip-check grid h-4 w-4 place-items-center">'+uiIcon('check','h-3.5 w-3.5')+'</span>' : '')+
+    '<span class="chip-label">'+label+'</span><span class="chip-count opacity-60">'+count.toLocaleString('en-US')+'</span></button>';
 }
 function buildGroupChips(){
   const g = {}; DATA.forEach(f => g[f.g]=(g[f.g]||0)+1);
@@ -818,11 +1131,11 @@ function buildCatList(){
   $('#catList').innerHTML = Object.keys(CATS).map(c => {
     const n = g[c]||0, on = state.cats.has(c);
     return '<button type="button" data-c="'+esc(c)+'" class="cat-item flex w-full items-center gap-3 rounded-full px-3 py-2 text-right transition '+
-      (on ? 'bg-[#e8f0fe] text-[#1a73e8]' : 'hover:bg-gray-100')+'">'+
+      (on ? 'is-active-cat' : 'hover:bg-gray-100')+'">'+
       '<span class="grid h-7 w-7 shrink-0 place-items-center rounded-full '+ICON_WRAP[c]+'">'+icon(CATS[c].icon,'h-4 w-4')+'</span>'+
-      '<span class="min-w-0 flex-1 truncate f-meta font-medium">'+c+'</span>'+
-      '<span class="f-xs font-medium text-gray-500">'+n.toLocaleString('en-US')+'</span>'+
-      (on ? '<span class="grid h-5 w-5 shrink-0 place-items-center">'+uiIcon('check','h-4 w-4')+'</span>' : '')+
+      '<span class="cat-label min-w-0 flex-1 truncate f-meta font-medium">'+c+'</span>'+
+      '<span class="cat-count f-xs font-medium">'+n.toLocaleString('en-US')+'</span>'+
+      (on ? '<span class="cat-check grid h-5 w-5 shrink-0 place-items-center">'+uiIcon('check','h-4 w-4')+'</span>' : '')+
     '</button>';
   }).join('');
 }
@@ -928,7 +1241,7 @@ function fileTile(f, idx){
   const folder = f.p.includes('\\') ? f.p.slice(0, f.p.lastIndexOf('\\')) : 'المجلد الرئيسي';
   return '<article class="drive-file-card file-card'+selected+' group relative flex cursor-pointer flex-col items-center gap-2 rounded-2xl p-3 text-center animate-fadeUp" tabindex="0" role="button" aria-pressed="'+(state.selectedFile===idx)+'" aria-label="'+esc(f.n)+'، '+extensionInfo(f).label+'" data-f="'+idx+'" data-full="'+esc(f.p)+'">'+
     '<span class="select-indicator" aria-hidden="true">'+uiIcon('check','h-3.5 w-3.5')+'</span>'+
-    '<button class="copy-btn absolute left-1.5 top-1.5 hidden h-7 w-7 place-items-center rounded-full bg-white text-gray-600 shadow-sm ring-1 ring-gray-200 transition hover:bg-gray-100 group-hover:grid" data-path="'+esc(f.p)+'" title="نسخ المسار">'+uiIcon('copy','h-3.5 w-3.5')+'</button>'+
+    '<button class="copy-btn absolute left-1.5 top-1.5 hidden h-7 w-7 place-items-center rounded-full bg-white text-gray-600 shadow-sm ring-1 ring-gray-200 transition hover:bg-gray-100 group-hover:grid" data-copy-file="'+idx+'" title="نسخ الرابط">'+uiIcon('copy','h-3.5 w-3.5')+'</button>'+
     '<button class="file-open-btn" data-open="'+idx+'" title="عرض تفاصيل الملف">'+uiIcon('external','h-4 w-4')+'</button>'+
     fileSvg(f, 'h-14 w-14 shrink-0')+
     '<span class="line-clamp-2 min-h-[2.6em] w-full break-words f-meta font-medium leading-tight text-gray-700">'+highlight(f.n)+'</span>'+
@@ -949,7 +1262,7 @@ function fileRow(f, idx){
     '<span class="hidden w-24 shrink-0 text-left f-xs font-medium text-gray-500 sm:block">'+sizeLabel(f.s)+'</span>'+
     '<span class="hidden w-32 shrink-0 text-left f-xs font-medium text-gray-500 md:block" dir="ltr">'+f.d+'</span>'+
     '<button class="file-open-btn" data-open="'+idx+'" title="عرض تفاصيل الملف">'+uiIcon('external','h-4 w-4')+'</button>'+
-    '<button class="copy-btn shrink-0 rounded-full p-2 text-gray-500 transition hover:bg-gray-200 hover:text-gray-700" data-path="'+esc(f.p)+'" title="نسخ المسار">'+uiIcon('copy','h-4 w-4')+'</button>'+
+    '<button class="copy-btn shrink-0 rounded-full p-2 text-gray-500 transition hover:bg-gray-200 hover:text-gray-700" data-copy-file="'+idx+'" title="نسخ الرابط">'+uiIcon('copy','h-4 w-4')+'</button>'+
   '</article>';
 }
 
@@ -1080,22 +1393,24 @@ function renderSelectionBar(){
   const bar = $('#selectionBar'), mobile = $('#mobileActionBar');
   if(!f){ bar.classList.remove('is-open'); mobile.classList.remove('is-open'); bar.innerHTML=''; mobile.innerHTML=''; return; }
   const idx = state.selectedFile, fav = isFavorite(f);
-  const actions = actionButton('preview',idx,'معاينة','eye','primary')+actionButton('open',idx,'فتح','external')+actionButton('download',idx,'تنزيل','download')+actionButton('favorite',idx,fav?'إزالة المفضلة':'إضافة للمفضلة','star',fav?'is-active':'')+actionButton('copy',idx,'نسخ المسار','copy')+actionButton('share',idx,'مشاركة','share')+actionButton('clear',idx,'إلغاء','x');
+  const actions = actionButton('preview',idx,'معاينة','eye','primary')+actionButton('open',idx,'فتح','external')+actionButton('download',idx,'تنزيل','download')+actionButton('favorite',idx,fav?'إزالة المفضلة':'إضافة للمفضلة','star',fav?'is-active':'')+actionButton('copy',idx,'نسخ الرابط','copy')+actionButton('share',idx,'مشاركة','share')+actionButton('clear',idx,'إلغاء','x');
   bar.innerHTML = '<div class="selection-file">'+fileSvg(f,'h-9 w-9 shrink-0')+'<span class="min-w-0"><b class="block truncate f-meta text-gray-800">'+esc(f.n)+'</b><small class="block f-xs text-gray-500">'+extensionInfo(f).label+' • '+sizeLabel(f.s)+'</small></span></div><div class="selection-actions">'+actions+'</div>';
   mobile.innerHTML = '<span class="min-w-0 truncate f-xs font-bold text-gray-700">'+esc(f.n)+'</span><div class="flex items-center gap-1">'+actionButton('preview',idx,'معاينة','eye','primary')+actionButton('favorite',idx,'مفضلة','star',fav?'is-active':'')+actionButton('clear',idx,'إلغاء','x')+'</div>';
   bar.classList.add('is-open'); mobile.classList.add('is-open');
 }
 function openFile(f){ pushRecent(f); window.open(fileUrl(f.p), '_blank', 'noopener'); }
+function directFileUrl(f){ return new URL(fileUrl(f.p), window.location.href).href; }
+function copyFileLink(f, msg='تم نسخ رابط الملف'){ return copyText(directFileUrl(f), msg); }
 function downloadFile(f){
   pushRecent(f);
   const a = document.createElement('a'); a.href = fileUrl(f.p); a.download = f.n; document.body.appendChild(a); a.click(); a.remove();
 }
 async function shareFile(f){
-  const url = new URL(fileUrl(f.p), window.location.href).href;
+  const url = directFileUrl(f);
   try {
     if(navigator.share){ await navigator.share({ title:f.n, text:'ملف من مكتبة فيزياء سطيف', url }); toast('تم فتح نافذة المشاركة'); }
-    else await copyText(url, 'تم نسخ رابط الملف للمشاركة');
-  } catch(e){ if(e && e.name !== 'AbortError') await copyText(url, 'تم نسخ رابط الملف للمشاركة'); }
+    else await copyFileLink(f, 'تم نسخ رابط الملف للمشاركة');
+  } catch(e){ if(e && e.name !== 'AbortError') await copyFileLink(f, 'تم نسخ رابط الملف للمشاركة'); }
 }
 function previewKind(f){
   const e = String(f.e||'').toLowerCase();
@@ -1114,10 +1429,27 @@ function openPreview(f){
   else if(kind === 'video') media = '<video controls preload="metadata" src="'+url+'"></video>';
   else if(kind === 'audio') media = '<audio controls preload="metadata" src="'+url+'"></audio>';
   else media = '<div class="max-w-md p-8 text-center"><span class="mx-auto grid h-14 w-14 place-items-center rounded-full bg-gray-100 text-gray-500">'+fileSvg(f,'h-9 w-9')+'</span><h3 class="mt-4 f-title font-extrabold text-gray-800">المعاينة غير متاحة لهذا الامتداد</h3><p class="mt-2 f-meta text-gray-500">يمكن فتح الملف أو تنزيله باستخدام البرنامج المناسب على جهازك.</p></div>';
-  $('#previewPanel').innerHTML = '<div class="sticky top-0 z-10 flex items-start justify-between gap-3 border-b border-gray-200 bg-white/95 p-4 backdrop-blur"><div class="flex min-w-0 items-center gap-3">'+fileSvg(f,'h-10 w-10 shrink-0')+'<div class="min-w-0"><h2 id="previewTitle" class="truncate f-title font-extrabold text-gray-800">'+esc(f.n)+'</h2><p class="f-xs text-gray-500">'+extensionPill(f)+' <span class="mr-1">'+sizeLabel(f.s)+'</span></p></div></div><button class="action-btn" data-close-preview aria-label="إغلاق المعاينة">'+uiIcon('x','h-4 w-4')+'</button></div><div class="space-y-4 p-4"><div class="preview-stage">'+media+'</div><div class="flex flex-wrap gap-2">'+actionButton('open',DATA.indexOf(f),'فتح الملف','external','primary')+actionButton('download',DATA.indexOf(f),'تنزيل','download')+actionButton('share',DATA.indexOf(f),'مشاركة','share')+'</div></div>';
+  $('#previewPanel').innerHTML = '<div class="preview-header sticky top-0 z-10 flex items-start justify-between gap-3 border-b p-4 backdrop-blur"><div class="flex min-w-0 items-center gap-3">'+fileSvg(f,'h-10 w-10 shrink-0')+'<div class="min-w-0"><h2 id="previewTitle" class="truncate f-title font-extrabold">'+esc(f.n)+'</h2><p class="preview-meta f-xs">'+extensionPill(f)+' <span class="mr-1">'+sizeLabel(f.s)+'</span></p></div></div><button class="action-btn" data-close-preview aria-label="إغلاق المعاينة">'+uiIcon('x','h-4 w-4')+'</button></div><div class="space-y-4 p-4"><div class="preview-stage">'+media+'</div><div class="flex flex-wrap gap-2">'+actionButton('open',DATA.indexOf(f),'فتح الملف','external','primary')+actionButton('download',DATA.indexOf(f),'تنزيل','download')+actionButton('share',DATA.indexOf(f),'مشاركة','share')+'</div></div>';
   $('#previewDrawer').classList.add('is-open'); document.body.classList.add('overflow-hidden');
 }
-function closePreview(){ $('#previewDrawer').classList.remove('is-open'); document.body.classList.remove('overflow-hidden'); }
+function closePreview(){
+  const panel = $('#previewPanel');
+  if(panel){
+    panel.querySelectorAll('video, audio').forEach(media => {
+      try {
+        media.pause();
+        media.currentTime = 0;
+        media.removeAttribute('src');
+        media.querySelectorAll('source').forEach(source => source.removeAttribute('src'));
+        media.load();
+      } catch(_) {}
+    });
+    panel.querySelectorAll('iframe').forEach(frame => { frame.src = 'about:blank'; });
+    panel.replaceChildren();
+  }
+  $('#previewDrawer').classList.remove('is-open');
+  document.body.classList.remove('overflow-hidden');
+}
 function openHelp(){
   $('#helpCard').innerHTML = '<div class="flex items-start justify-between gap-4"><div><h2 id="helpTitle" class="f-lg font-extrabold text-gray-800">اختصارات لوحة المفاتيح</h2><p class="mt-1 f-meta text-gray-500">تنقل في المكتبة بسرعة من لوحة المفاتيح.</p></div><button data-close-help class="action-btn" aria-label="إغلاق">'+uiIcon('x','h-4 w-4')+'</button></div><div class="help-grid"><div class="key-help"><span>تركيز البحث</span><kbd>/</kbd></div><div class="key-help"><span>فتح الملف</span><kbd>Enter</kbd></div><div class="key-help"><span>اختيار الملف</span><kbd>Space</kbd></div><div class="key-help"><span>التنقل بين الملفات</span><kbd>الأسهم</kbd></div><div class="key-help"><span>نسخ مسار المحدد</span><kbd>Ctrl + C</kbd></div><div class="key-help"><span>إغلاق النوافذ</span><kbd>Esc</kbd></div><div class="key-help"><span>هذه المساعدة</span><kbd>?</kbd></div></div>';
   $('#helpModal').classList.remove('hidden'); $('#helpModal').classList.add('flex'); document.body.classList.add('overflow-hidden'); requestAnimationFrame(()=>$('#helpCard').querySelector('[data-close-help]').focus());
@@ -1193,7 +1525,7 @@ function openModal(f){
       '</div>'+
     '</div>'+
     '<div class="mt-5 flex flex-wrap items-center gap-2">'+
-      actionButton('preview',idx,'معاينة','eye','primary')+actionButton('open',idx,'فتح الملف','external')+actionButton('download',idx,'تنزيل','download')+actionButton('favorite',idx,fav?'إزالة المفضلة':'إضافة للمفضلة','star',fav?'is-active':'')+actionButton('copy',idx,'نسخ المسار','copy')+actionButton('share',idx,'مشاركة','share')+
+      actionButton('preview',idx,'معاينة','eye','primary')+actionButton('open',idx,'فتح الملف','external')+actionButton('download',idx,'تنزيل','download')+actionButton('favorite',idx,fav?'إزالة المفضلة':'إضافة للمفضلة','star',fav?'is-active':'')+actionButton('copy',idx,'نسخ الرابط','copy')+actionButton('share',idx,'مشاركة','share')+
     '</div>';
   $('#modal').classList.remove('hidden');
   $('#modal').classList.add('flex');
@@ -1224,7 +1556,7 @@ function toast(msg, ok=true){
 async function copyText(t, msg){
   try {
     await navigator.clipboard.writeText(t);
-    toast(msg || 'تم نسخ المسار', true);
+    toast(msg || 'تم النسخ', true);
     return true;
   } catch(e){
     try {
@@ -1232,7 +1564,7 @@ async function copyText(t, msg){
       ta.value = t; ta.style.position='fixed'; ta.style.opacity='0';
       document.body.appendChild(ta); ta.select();
       document.execCommand('copy'); ta.remove();
-      toast(msg || 'تم نسخ المسار', true);
+      toast(msg || 'تم النسخ', true);
       return true;
     } catch(e2){
       toast('تعذّر النسخ تلقائياً — المسار: '+t, false);
@@ -1312,7 +1644,6 @@ function restorePrefs(){
 /* ================= الأحداث ================= */
 $('#homeBtn').onclick = () => { state.nav=[]; state.q=''; state.cats.clear(); state.groups.clear(); state.topics.clear(); state.ext=''; state.collection=''; clearSelected(); $('#searchInput').value=''; $('#extSelect').value=''; $('#searchClear').classList.add('hidden'); closeSearchSuggestions(); renderCatList(); rerenderChips(); apply(); savePrefs(); };
 $('#localHomeBtn').onclick = () => $('#homeBtn').click();
-$('#newBtn').onclick = () => toast('اربط مجلد المكتبة لإضافة ملفات أو مجلدات جديدة.');
 $('#themeToggle').onclick = () => setTheme(document.body.classList.contains('dark') ? 'light' : 'dark');
 
 let searchTimer = null;
@@ -1390,7 +1721,7 @@ document.addEventListener('click', e => {
     else if(type==='open') openFile(f);
     else if(type==='download') downloadFile(f);
     else if(type==='favorite') toggleFavorite(f);
-    else if(type==='copy') copyText(f.p);
+    else if(type==='copy') copyFileLink(f);
     else if(type==='share') shareFile(f);
     else if(type==='clear') clearSelected();
     return;
@@ -1400,7 +1731,7 @@ document.addEventListener('click', e => {
   if(e.target.closest('[data-close-preview]')){ closePreview(); return; }
   if(e.target.closest('[data-close-help]')){ closeHelp(); return; }
   const copyBtn = e.target.closest('.copy-btn');
-  if(copyBtn){ e.stopPropagation(); copyText(copyBtn.dataset.path); return; }
+  if(copyBtn){ e.stopPropagation(); copyFileLink(DATA[Number(copyBtn.dataset.copyFile)]); return; }
 
   const copyData = e.target.closest('[data-copy]');
   if(copyData){ copyText(copyData.dataset.copy); return; }
@@ -1479,7 +1810,7 @@ document.addEventListener('keydown', e => {
   }
   if((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'c' && state.selectedFile !== null && document.activeElement.tagName !== 'INPUT'){
     e.preventDefault();
-    copyText(DATA[state.selectedFile].p, 'تم نسخ مسار الملف المحدد');
+    copyFileLink(DATA[state.selectedFile], 'تم نسخ رابط الملف المحدد');
   }
 });
 
